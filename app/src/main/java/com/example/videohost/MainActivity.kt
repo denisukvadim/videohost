@@ -16,6 +16,7 @@ package com.example.videohost
 
 import android.app.Activity
 import android.content.Context
+import android.graphics.Color
 import android.net.Uri
 import android.net.wifi.WifiManager
 import android.os.Bundle
@@ -134,6 +135,7 @@ class MainActivity : Activity(), OnPreparedListener {
         ip_address.visibility = View.GONE
         wifi_name.visibility = View.GONE
         video_view.visibility = View.VISIBLE
+        video_view.background = getDrawable(R.color.background_gradient_start)
         val videoUri = Uri.parse(playlist)
         video_view.setVideoURI(videoUri)
     }
