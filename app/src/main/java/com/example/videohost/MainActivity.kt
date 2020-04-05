@@ -132,6 +132,7 @@ class MainActivity : Activity(), OnPreparedListener {
 
     fun openPlayer(playlist: String?) {
         ip_address.visibility = View.GONE
+        wifi_name.visibility = View.GONE
         video_view.visibility = View.VISIBLE
         val videoUri = Uri.parse(playlist)
         video_view.setVideoURI(videoUri)
